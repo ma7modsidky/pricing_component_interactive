@@ -10,8 +10,9 @@ html {
 }
 
 .wrapper {
+    position: absolute;
     overflow-x: hidden;
-    position: fixed;
+    overflow-y: scroll !important;
 }
 
 body {
