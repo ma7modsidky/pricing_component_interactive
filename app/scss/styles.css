@@ -11,6 +11,7 @@ html {
   font-size: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *, *::after, *::before {
@@ -77,6 +78,7 @@ a, a:visited a:hover a:any-link {
   z-index: 2;
   position: relative;
   padding: 5.25rem 0rem 1.25rem 0rem;
+  width: 100vw;
 }
 
 .pricing h1 {
