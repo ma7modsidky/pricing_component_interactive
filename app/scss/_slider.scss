@@ -1,0 +1,115 @@
+  input[type=range].slider {
+    -webkit-appearance: none;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    margin: 2.5rem;
+  }
+
+
+  //thumb and track
+  input[type=range].slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    margin-top: -10.8px;
+    width: 30px;
+    height: 30px;
+    background: #10d5c2;
+    border-radius: 50px;
+    box-shadow: 0 0.75rem 1.25rem $SoftCyan;
+    cursor: pointer;
+    background: $StrongCyan no-repeat center url("/images/icon-slider.svg");
+    @extend %transition;
+
+    &:hover {
+      background: $SoftCyan no-repeat center url("/images/icon-slider.svg");
+    }
+  }
+
+  input[type=range].slider::-webkit-slider-runnable-track {
+    background: #eaeefb;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: 4.4px;
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background-image: linear-gradient(
+          to right,
+          $SoftCyan var(--fillwidth),
+          $LightGrayishBlue var(--fillwidth)
+          );
+        }
+
+
+//for mozilla
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  margin-top: -10.8px;
+  width: 30px;
+  height: 30px;
+  background: #10d5c2;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0.75rem 1.25rem $SoftCyan;
+  cursor: pointer;
+  background: $StrongCyan no-repeat center url("/images/icon-slider.svg");
+  @extend %transition;
+
+  &:hover {
+    background: $SoftCyan no-repeat center url("/images/icon-slider.svg");
+  }
+}
+
+input[type=range]::-moz-range-track {
+  background: #eaeefb;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-radius: 4.4px;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background-image: linear-gradient(
+        to right,
+        $SoftCyan var(--fillwidth),
+        $LightGrayishBlue var(--fillwidth)
+        );
+}
+
+//for internet explorer and edge
+input[type=range]::ms {
+  &-thumb {
+    appearance: none;
+    margin-top: -10.8px;
+    width: 30px;
+    height: 30px;
+    background: #10d5c2;
+    border-radius: 50px;
+    box-shadow: 0 0.75rem 1.25rem $SoftCyan;
+    cursor: pointer;
+    background: $StrongCyan no-repeat center url("/images/icon-slider.svg");
+    @extend %transition;
+
+    &:hover {
+      background: $SoftCyan no-repeat center url("/images/icon-slider.svg");
+    }
+  }
+
+  &-track {
+    background: #eaeefb;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: 4.4px;
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+  }
+
+  &-fill-lower {
+    background: $SoftCyan;
+  }
+
+  &-fill-upper {
+    background: $StrongCyan;
+  }
+}
+
+
+  
+

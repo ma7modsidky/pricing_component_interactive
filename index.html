@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app\scss\styles.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="bg__overlay"><svg xmlns="http://www.w3.org/2000/svg" width="1440" height="449"><path fill="#F1F5FE" fill-rule="evenodd" d="M0 0h1440v449H191.5C85.737 449 0 363.263 0 257.5V0z"/></svg></div>
+    <div class="bg_circles"><svg xmlns="http://www.w3.org/2000/svg" width="146" height="145"><g fill="none" fill-rule="evenodd" stroke="#CFD8EF"><circle cx="63" cy="82" r="62.5"/><circle cx="105" cy="41" r="40.5"/></g></svg></div>
+  <section class="pricing">
+    <div class="pricing__content">
+      <h1 class="pricing__title">Simple, traffic-based pricing</h1>
+      <p class="pricing__description">Sign-up for our 30-day trial. No credit card required. </p>
+      <div class="pricing__card">
+        <div class="pricing__views" id="pageviews">100K Pageviews</div>
+        <div class="pricing__slider"><input
+          type="range"
+          name="slider"
+          id="slider"
+          class="slider"
+          value="50%"
+          min="1"
+          max="19"
+          aria-label="price-slider"
+        /></div>
+        <div class="pricing__price"><span id="price">$16K </span><span class="period" id="period">/ month</span></div>
+        <div class="pricing__billing">
+          <span class="monthly">Monthly Billing</span>
+          <div class='toggle-check'>
+            <input type='checkbox' id="toggle"/>
+            <span class='toggle-b'></span>
+            <span class='toggle-bg'></span>
+          </div>
+          <span class="yearly">Yearly Billing</span>
+          <span class="discount">-25%</span>
+        </div>
+        <div class="card2">
+          <div class="pricing__features">
+            <ul>
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+          </div>
+          <div href="#" class="button">Start my trial</div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <script src="app/js/slider.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mahmoud Sidky</a>.
+  </div>
+</body>
+</html>

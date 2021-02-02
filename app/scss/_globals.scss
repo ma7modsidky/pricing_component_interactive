@@ -1,0 +1,25 @@
+html {
+    font-size: 15px;
+    box-sizing: border-box;
+    
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    color: $GrayishBlue;
+    background-color: $VeryPaleBlue;
+    overflow-x: hidden;
+    
+
+}
+
+a, a:visited a:hover a:any-link{
+    text-decoration: none;
+}

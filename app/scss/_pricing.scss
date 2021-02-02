@@ -1,0 +1,170 @@
+.bg__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.bg_circles{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.pricing {
+    text-align: center;
+    background-color: $VeryPaleBlue;
+    position: relative;
+    
+    
+
+    &__content {
+        z-index: 2;
+        position: relative;
+        padding: 5.25rem 0rem 1.25rem 0rem;
+    }
+    
+    h1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        // padding-top: 5rem;
+        color: $DarkDesaturatedBlue;
+        font-weight: 800;
+    }
+    p {
+        color: $GrayishBlue;
+        width: 70%;
+        margin: auto;
+    }
+
+    &__card {
+        background-color: $White;
+        position: relative;
+        width: 80%;
+        max-width: 500px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px;
+        box-shadow: 0px 7px 20px rgba(0,0,0,0.15);
+        padding: 1rem;
+        margin-top: 2rem;
+
+        @include breakpoint-up(medium){
+            width: 70%;
+        }
+        @include breakpoint-up(large){
+            width: 50%;
+        }
+    }
+
+    &__views {
+        font-size: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 1rem;
+    }
+
+    &__slider {
+        width: 100%;
+    }
+
+    &__price {
+        padding: 1rem;
+        
+        #price{
+            line-height: 1.5;
+            font-weight: bold;
+            font-size: 2rem;
+            color: $DarkDesaturatedBlue;
+        }
+
+        #period {
+            vertical-align:super;
+        }
+    }
+    
+    &__billing {
+        width: 100%;
+        font-size: 12px;
+        display: flex;
+        justify-content:space-around;
+        align-items: center ;
+        padding: 1.5rem 0.5rem;
+        > :not(:last-child){
+           margin-right: 0.5rem;
+       }
+        
+        @include breakpoint-up(medium){
+            width: 70%;
+            margin: auto;
+        }
+
+        .discount {
+            background-color: $LightGrayishRed;
+            color: $LightRed;
+            border-radius: 50px;
+            padding: 0.3rem 0.6rem;
+        }
+
+        
+    }    
+
+    .card2 {
+        border-top: 2px solid $GrayishBlue;
+        @include breakpoint-up(medium){
+            display: flex;
+
+        }
+    }
+
+    &__features {
+        padding: 1rem;
+        ul {
+            list-style-image: url('/images/icon-check.svg');
+            list-style-position: inside;
+            padding: 0;
+            // list-style: none;
+            text-align: center;
+
+            li {
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        @include breakpoint-up(medium){
+            flex: 2;
+
+        }
+    }
+
+    .button {
+        display: block;
+        position: relative;
+        margin: auto;
+        margin-bottom: 3rem;
+        width: 70%;
+        background-color: $DarkDesaturatedBlue;
+        color: $PaleBlue;
+        padding: 0.8rem 2.2rem;
+        border-radius: 50px;
+        cursor: pointer;
+        @extend %transition;
+
+        &:hover {
+            color: $White;
+            background-color: $StrongCyan;
+        }
+
+        @include breakpoint-up(medium){
+            flex: 1;
+            width: 50%;
+            margin: auto;
+
+        }
+        
+    }
+}
