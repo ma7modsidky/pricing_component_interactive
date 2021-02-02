@@ -19,6 +19,11 @@ html {
           box-sizing: inherit;
 }
 
+.wrapper {
+  overflow-x: hidden;
+  position: fixed;
+}
+
 body {
   padding: 0;
   margin: 0;
